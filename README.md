@@ -4,3 +4,12 @@ Differentes algorithms or data structures implementations that i discover meanwh
 # Problems
 ## Union and Find
 * https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/description/
+
+## Segment Tree
+### booleans data
+* https://leetcode.com/problems/special-array-ii/description/
+
+
+# TODO
+* Implement update for segment Tree
+* query from leaf nodes
