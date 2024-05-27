@@ -8,6 +8,8 @@ Differentes algorithms or data structures implementations that i discover meanwh
 ## Segment Tree
 ### booleans data
 * https://leetcode.com/problems/special-array-ii/description/
+### sum subsequence with a condition
+* https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/description/
 
 
 # TODO
