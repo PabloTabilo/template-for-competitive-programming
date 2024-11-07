@@ -1,8 +1,6 @@
 # Template C++ DS & Algo implementations
 Differentes algorithms or data structures implementations that i discover meanwhile do some contest or try to solve a problem.
 
-# Problems
-
 # Math problems
 ## Modular Exponentiation
 We need use this technique, but it's not the complete concept to understand the problem:
