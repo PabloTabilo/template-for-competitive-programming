@@ -12,7 +12,9 @@ If $p$ is a prime number and $a$ is an integer such that $a$ is not divisible by
 $$a^{p-1} \equiv 1 \pmod{p}$$
 #### Modular Inverse using Fermat's Little Theorem
 The above theorem can be rearranged to give the modular inverse of $a$:
-$$ a^{-1} \equiv a^{p-2} \pmod(p) $$
+$$\[
+a^{-1} \equiv a^{p-2} \pmod(p)
+\]$$
 This allows us to calculate the inverse of $a$ under modulo $p$, which is useful for division in modular arithmetic.
 Example problem for use this technique: https://codeforces.com/contest/2008/problem/F
 
