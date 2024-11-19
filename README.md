@@ -1,5 +1,5 @@
 # Template C++ DS & Algo implementations
-Differentes algorithms or data structures implementations that i discover meanwhile do some contest or try to solve a problem.
+Various algorithm and data structure implementations that I discover while participating in contests or solving problems.
 
 # Math problems
 ## Modular Exponentiation
@@ -31,6 +31,11 @@ Example problem for use this technique: https://codeforces.com/contest/2008/prob
 ## Graph Problems
 ### Number nodes of max cycle vs two-component cycle + list from each node
 * https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/description/
+
+# Strings
+## z-function:
+* https://cp-algorithms.com/string/z-function.html
+* https://judge.yosupo.jp/problem/zalgorithm
 
 # TODO
 * Implement update for segment Tree
