@@ -1,6 +1,12 @@
 # Template C++ DS & Algo implementations
 Various algorithm and data structure implementations that I discover while participating in contests or solving problems.
 
+## Table of Contents
+- [Math Problems](#math-problems)
+- [Searching and Sorting Problems](#searching-and-sorting-problems)
+- [Data Structures Problems](#data-structures-problems)
+- [Strings Problems](#strings)
+
 # Math problems
 ## Modular Exponentiation
 We need use this technique, but it's not the complete concept to understand the problem:
@@ -17,6 +23,10 @@ $$a^{-1} \equiv a^{p-2} \pmod(p)$$
 
 This allows us to calculate the inverse of $a$ under modulo $p$, which is useful for division in modular arithmetic.
 Example problem for use this technique: https://codeforces.com/contest/2008/problem/F
+
+# Searching and Sorting problems
+## Intervals
+* https://cses.fi/problemset/task/1619
 
 # Data Structures Problems
 ## Union and Find
