@@ -16,6 +16,7 @@ Various algorithm and data structure implementations that I discover while parti
 # Math problems
 ## Modular Exponentiation
 Imagine you need to compute a value $a^e$ where $a>0$ and $e$ is a large positive integer. Calculating this directly can result in excessively large numbers, leading to overflow errors. To avoid this, we use modular arithmetic, where the result is calculated modulo a given number $m$. In mathematical terms, we aim to compute:
+
 $$a^e \mod m$$
 
 Where:
@@ -30,6 +31,7 @@ The method relies on divide-and-conquer principles while leveraging properties o
 Let’s break it down using an example: compute $2^9 \pmod{10^9 + 1}$.
 
 We know:
+
 $$2^9 = 2\cdot2^8 = 2\cdot(2^4)^2$$
 
 The idea is to take advantage of the parity (odd or even nature) of the exponent.
@@ -51,7 +53,6 @@ long long modularExponentiation(long long base, long long exp, long long mod){
     return result;
 }
 ```
-
 
 ### Example problems
 
