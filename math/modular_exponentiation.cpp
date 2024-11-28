@@ -8,9 +8,9 @@ long long modularExponentiation(long long base, long long exp, long long mod){
     long long result = 1;
     while(exp > 0){
         if(exp % 2 == 1){
-            result = ((result%mod) * (base % mod)) % mod;
+            result = (result * base) % mod;
         }
-        base = ((base% mod) * (base%mod)) % mod;
+        base = (base * base) % mod;
         exp /= 2;
     }
     return result;
