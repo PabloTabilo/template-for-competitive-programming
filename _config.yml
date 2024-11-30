@@ -4,4 +4,4 @@ description: Dive into the world of Data Structures and Algorithms with C++ temp
 
 markdown: kramdown
 kramdown:
-    math_engine: katex
+    math_engine: mathjax
