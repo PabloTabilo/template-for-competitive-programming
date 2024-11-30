@@ -1,3 +1,8 @@
+---
+layout: custom
+title: Home
+---
+
 # A Journey Through DS and Algorithms: With C++ Template Reference, notes and Problem Insights
 Various algorithm and data structure implementations that I discover while participating in contests or solving problems.
 
