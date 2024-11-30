@@ -1,3 +1,7 @@
 theme: jekyll-theme-minimal
-title: Journey Through DS and Algorithms
-description: This is a journey through DS and Algorithms with C++ Template Reference, notes and Problem Insights
+title: A Journey Through DS and Algorithms
+description: Dive into the world of Data Structures and Algorithms with C++ template references, comprehensive notes, and in-depth problem analysis.
+
+markdown: kramdown
+kramdown:
+    math_engine: katex
