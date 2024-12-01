@@ -99,3 +99,15 @@ Example problem for use this technique: https://codeforces.com/contest/2008/prob
 # TODO
 * Implement update for segment Tree
 * query from leaf nodes
+* Implement some of combinatorics
+    - https://cses.fi/problemset/task/1072
+* Good problem for Legendre's formula
+    - https://cses.fi/problemset/result/11293617/
+    - https://en.wikipedia.org/wiki/Legendre%27s_formula
+* Good problem for euclidean circuit
+    - https://leetcode.com/problems/valid-arrangement-of-pairs/description/?envType=daily-question&envId=2024-11-30
+    - we implement a solution using Hierholzer's algorithm
+* Example of a good book online:
+    - https://en.algorithmica.org/hpc/
+    - https://gohugo.io/getting-started/quick-start/
+    - very good theme: https://themes.gohugo.io/themes/hugo-book/
