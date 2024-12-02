@@ -1,0 +1,28 @@
+# Base configuration
+#baseURL = "https://example.org" # Replace with your actual GitHub Pages URL
+baseURL = "https://github.com/PabloTabilo/journey-ds-algo"
+languageCode = "en-us"
+title = "A Journey Through DS and Algorithms"
+theme = "hugo-book"
+relativeURLs = true
+canonifyURLs = true
+enableGitInfo = true
+
+[params]
+  BookTheme = 'light'
+  bookToC = false                    # Enable Table of Contents
+  bookCollapseSection = true        # Collapsible sections in the sidebar
+  bookCollapseDepth = 0            # Collapse depth for subsections
+  bookSidebar = true                # Enable sidebar navigation
+  bookSearch = true                 # Enable search functionality
+  bookShowSectionNumber = true      # Add numbers to sections
+  bookShowAllSections = true        # Ensure all sections are visible in the sidebar
+  bookKatex = true                  # Enable KaTeX for LaTeX support
+  BookSection = '*'
+
+[markup]
+  [markup.katex]
+    enable = true                   # Enable LaTeX rendering
+  [markup.highlight]
+    noClasses = true               # Use CSS classes for syntax highlighting
+    style = "pygments"               # Style for code blocks
