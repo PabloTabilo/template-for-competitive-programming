@@ -97,6 +97,7 @@ Example problem for use this technique: https://codeforces.com/contest/2008/prob
 * https://judge.yosupo.jp/problem/zalgorithm
 
 # TODO
+* Trello for track tasks: https://trello.com/b/Ovfot02n/journey-ds-and-algo-repo-book
 * Implement update for segment Tree
 * query from leaf nodes
 * Implement some of combinatorics
