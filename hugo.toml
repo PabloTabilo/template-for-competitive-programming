@@ -1,6 +1,6 @@
 # Base configuration
-#baseURL = "https://example.org" # Replace with your actual GitHub Pages URL
-baseURL = "https://pablotabilo.github.io/journey-ds-algo/"
+baseURL = "https://example.org" # Replace with your actual GitHub Pages URL
+#baseURL = "https://pablotabilo.github.io/journey-ds-algo/"
 languageCode = "en-us"
 title = "A Journey Through DS and Algorithms"
 theme = "hugo-book"
