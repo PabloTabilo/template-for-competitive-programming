@@ -1,12 +1,12 @@
 # Base configuration
-#baseURL = "http://localhost:1313/" # Replace with your actual GitHub Pages URL
-baseURL = "journey-ds-algo/"
+baseURL = "http://localhost:1313/" # Replace with your actual GitHub Pages URL
 languageCode = "en-us"
 title = "A Journey Through DS and Algorithms"
 theme = "hugo-book"
 relativeURLs = true
 canonifyURLs = true
 enableGitInfo = true
+themesDir = "themes"
 
 [params]
   BookTheme = 'light'
