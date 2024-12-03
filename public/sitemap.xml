@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/math/</loc>
+    <loc>//localhost:1313/math/</loc>
     <lastmod>2024-12-02T20:43:40-03:00</lastmod>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/data-structures/</loc>
+    <loc>//localhost:1313/data-structures/</loc>
     <lastmod>2024-12-02T20:43:40-03:00</lastmod>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/data-structures/graphs/</loc>
+    <loc>//localhost:1313/data-structures/graphs/</loc>
     <lastmod>2024-12-02T20:43:40-03:00</lastmod>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2024-12-02T20:43:40-03:00</lastmod>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/math/modular-exponentiation/</loc>
+    <loc>//localhost:1313/math/modular-exponentiation/</loc>
     <lastmod>2024-12-02T20:43:40-03:00</lastmod>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/data-structures/segment-tree/</loc>
+    <loc>//localhost:1313/data-structures/segment-tree/</loc>
     <lastmod>2024-12-02T20:43:40-03:00</lastmod>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
   </url>
 </urlset>

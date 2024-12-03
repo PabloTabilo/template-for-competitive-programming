@@ -32,7 +32,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.139.3
+      HUGO_VERSION: 0.137.1
     steps:
       - name: Install Hugo CLI
         run: |
@@ -59,7 +59,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --config hugo.production.toml      
+            --baseURL "${{ steps.pages.outputs.base_url }}/"          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -1,5 +1,5 @@
 # Base configuration
-baseURL = "http://localhost:1313/" # Replace with your actual GitHub Pages URL
+#baseURL = "http://localhost:1313/" # Replace with your actual GitHub Pages URL
 #baseURL = "https://pablotabilo.github.io/journey-ds-algo/"
 languageCode = "en-us"
 title = "A Journey Through DS and Algorithms"
