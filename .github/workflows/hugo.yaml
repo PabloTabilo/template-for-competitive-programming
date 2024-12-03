@@ -61,7 +61,11 @@ jobs:
             --minify \
             --config hugo.production.toml \
             --baseURL "https://pablotabilo.github.io/journey-ds-algo/" \
-            --verbose
+            --logLevel
+      - name: Debug public folder
+        run: |
+          echo "Listing contents of the public folder:"
+          ls -al ./public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
