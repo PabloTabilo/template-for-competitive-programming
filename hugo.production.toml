@@ -1,5 +1,5 @@
 # Base configuration
-baseURL = "https://pablotabilo.github.io/journey-ds-algo/"
+baseURL = "https://pablotabilo.github.io/"
 languageCode = "en-us"
 title = "A Journey Through DS and Algorithms"
 theme = "hugo-book"
