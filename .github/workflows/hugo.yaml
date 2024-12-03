@@ -61,7 +61,7 @@ jobs:
             --minify \
             --config hugo.production.toml \
             --baseURL "https://pablotabilo.github.io/journey-ds-algo/" \
-            --logLevel
+            --logLevel info
       - name: Debug public folder
         run: |
           echo "Listing contents of the public folder:"
