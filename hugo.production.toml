@@ -1,5 +1,5 @@
 # Base configuration
-#baseURL = "https://pablotabilo.github.io/journey-ds-algo/"
+baseURL = "https://pablotabilo.github.io/journey-ds-algo/"
 languageCode = "en-us"
 title = "A Journey Through DS and Algorithms"
 theme = "hugo-book"
@@ -7,7 +7,6 @@ relativeURLs = true
 canonifyURLs = true
 enableGitInfo = true
 themesDir = "themes"
-
 
 [params]
   BookTheme = 'light'
