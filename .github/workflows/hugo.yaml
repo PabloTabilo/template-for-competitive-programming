@@ -66,6 +66,8 @@ jobs:
         run: |
           echo "Listing contents of the public folder:"
           ls -al ./public
+      - name: Debug BaseURL
+        run: echo "BaseURL: ${{ github.server_url }}/{{ github.repository }}" 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
