@@ -3,8 +3,8 @@ baseURL = "http://localhost:1313/" # Replace with your actual GitHub Pages URL
 languageCode = "en-us"
 title = "A Journey Through DS and Algorithms"
 theme = "hugo-book"
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 enableGitInfo = true
 themesDir = "themes"
 

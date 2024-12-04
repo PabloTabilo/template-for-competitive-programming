@@ -1,23 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on A Journey Through DS and Algorithms</title><link>https://pablotabilo.github.io/journey-ds-algo/</link><description>Recent content in Home on A Journey Through DS and Algorithms</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pablotabilo.github.io/journey-ds-algo/index.xml" rel="self" type="application/rss+xml"/><item><title>Graphs</title><link>https://pablotabilo.github.io/journey-ds-algo/data-structures/graphs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pablotabilo.github.io/journey-ds-algo/data-structures/graphs/</guid><description>&lt;h1 id="graph-problems">
- Graph Problems
- &lt;a class="anchor" href="#graph-problems">#&lt;/a>
-&lt;/h1>
-&lt;p>Content for Graph Problems goes here.&lt;/p></description></item><item><title>Modular Exponentiation</title><link>https://pablotabilo.github.io/journey-ds-algo/math/modular-exponentiation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pablotabilo.github.io/journey-ds-algo/math/modular-exponentiation/</guid><description>&lt;h1 id="modular-exponentiation">
- Modular Exponentiation
- &lt;a class="anchor" href="#modular-exponentiation">#&lt;/a>
-&lt;/h1>
-&lt;p>Imagine you need to compute a value $a^e$ where $a &amp;gt; 0$ and $e$ is a large positive integer. Calculating this directly can result in excessively large numbers, leading to overflow errors.&lt;/p>
-&lt;h2 id="why-modular-exponentiation">
- Why Modular Exponentiation?
- &lt;a class="anchor" href="#why-modular-exponentiation">#&lt;/a>
-&lt;/h2>
-&lt;p>For example, $2^{1000}$. Calculating this value directly would involve a massive number, making it computationally infeasible.&lt;/p>
-&lt;h2 id="algorithm">
- Algorithm
- &lt;a class="anchor" href="#algorithm">#&lt;/a>
-&lt;/h2>
-&lt;p>The method uses divide-and-conquer principles to reduce complexity from $O(e)$ to $O(\log e)$.&lt;/p></description></item><item><title>Segment Tree</title><link>https://pablotabilo.github.io/journey-ds-algo/data-structures/segment-tree/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pablotabilo.github.io/journey-ds-algo/data-structures/segment-tree/</guid><description>&lt;h1 id="segment-tree">
- Segment Tree
- &lt;a class="anchor" href="#segment-tree">#&lt;/a>
-&lt;/h1>
-&lt;p>Content for Segment Tree problems goes here.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on A Journey Through DS and Algorithms</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on A Journey Through DS and Algorithms</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modular Exponentiation</title>
+      <link>http://localhost:1313/math/modular-exponentiation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/math/modular-exponentiation/</guid>
+      <description>&lt;h1 id=&#34;modular-exponentiation&#34;&gt;&#xD;&#xA;  Modular Exponentiation&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#modular-exponentiation&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Imagine you need to compute a value $a^e$ where $a&amp;gt;0$ and $e$ is a large positive integer. Calculating this directly can result in excessively large numbers, leading to overflow errors. To avoid this, we use modular arithmetic, where the result is calculated modulo a given number $m$. In mathematical terms, we aim to compute:&lt;/p&gt;&#xA;&lt;p&gt;$$a^e \mod m$$&lt;/p&gt;&#xA;&lt;p&gt;Where:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$a&amp;gt;0$ and $e&amp;gt;0$, both are integers.&lt;/li&gt;&#xA;&lt;li&gt;$m$ is the modulus, typically chosen to constrain the result within manageable bounds.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;why-modular-exponentiation-&#34;&gt;&#xD;&#xA;  Why Modular Exponentiation ?&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#why-modular-exponentiation-&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;For example, $2^{1000}$. Calculating this value directly would involve a massive number, making it computationally infeasible due to both time complexity and memory constraints. Modular exponentiation is a technique designed to handle this efficiently.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fermat&#39;s little Theorem</title>
+      <link>http://localhost:1313/math/fermats-little-theorem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/math/fermats-little-theorem/</guid>
+      <description>&lt;h1 id=&#34;fermats-little-theorem&#34;&gt;&#xD;&#xA;  Fermat&amp;rsquo;s Little Theorem&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#fermats-little-theorem&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;If $p$ is a prime number and $a$ is an integer such that $a$ is not divisible by $p$, then:&lt;/p&gt;&#xA;&lt;p&gt;$$a^{p-1} \equiv 1 \pmod{p}$$&lt;/p&gt;&#xA;&lt;h2 id=&#34;modular-inverse-using-fermats-little-theorem&#34;&gt;&#xD;&#xA;  Modular Inverse using Fermat&amp;rsquo;s Little Theorem&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#modular-inverse-using-fermats-little-theorem&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;The above theorem can be rearranged to give the modular inverse of $a$:&lt;/p&gt;&#xA;&lt;p&gt;$$a^{-1} \equiv a^{p-2} \pmod{p}$$&lt;/p&gt;&#xA;&lt;p&gt;This allows us to calculate the inverse of $a$ under modulo $p$, which is useful for division in modular arithmetic.&#xA;Example problem for use this technique: &lt;a href=&#34;https://codeforces.com/contest/2008/problem/F&#34;&gt;https://codeforces.com/contest/2008/problem/F&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Graphs</title>
+      <link>http://localhost:1313/data-structures/graphs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/data-structures/graphs/</guid>
+      <description>&lt;h1 id=&#34;graph-problems&#34;&gt;&#xD;&#xA;  Graph Problems&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#graph-problems&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Content for Graph Problems goes here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Segment Tree</title>
+      <link>http://localhost:1313/data-structures/segment-tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/data-structures/segment-tree/</guid>
+      <description>&lt;h1 id=&#34;segment-tree&#34;&gt;&#xD;&#xA;  Segment Tree&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#segment-tree&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Content for Segment Tree problems goes here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
