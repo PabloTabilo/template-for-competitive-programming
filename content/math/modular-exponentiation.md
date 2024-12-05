@@ -42,3 +42,7 @@ long long modularExponentiation(long long base, long long exp, long long mod) {
     }
     return result;
 }
+```
+# Example Problems
+* https://cses.fi/problemset/task/1617/
+* We need use this technique, but it's not the complete concept to understand the problem: https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-ii/description/
