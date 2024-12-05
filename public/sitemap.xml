@@ -2,31 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/math/</loc>
-    <lastmod>2024-12-02T20:43:40-03:00</lastmod>
+    <loc>http://localhost:1313/math/</loc>
+    <lastmod>2024-12-04T21:19:11-03:00</lastmod>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/math/modular-exponentiation/</loc>
+    <loc>http://localhost:1313/math/modular-exponentiation/</loc>
     <lastmod>2024-12-03T22:19:24-03:00</lastmod>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/data-structures/</loc>
+    <loc>http://localhost:1313/data-structures/</loc>
     <lastmod>2024-12-02T20:43:40-03:00</lastmod>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/math/fermats-little-theorem/</loc>
+    <loc>http://localhost:1313/math/fermats-little-theorem/</loc>
     <lastmod>2024-12-03T22:19:24-03:00</lastmod>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/data-structures/graphs/</loc>
+    <loc>http://localhost:1313/data-structures/graphs/</loc>
     <lastmod>2024-12-02T20:43:40-03:00</lastmod>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-12-02T20:43:40-03:00</lastmod>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/math/legendres-formula/</loc>
+    <loc>http://localhost:1313/math/legendres-formula/</loc>
+    <lastmod>2024-12-04T21:25:39-03:00</lastmod>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/data-structures/segment-tree/</loc>
+    <loc>http://localhost:1313/data-structures/segment-tree/</loc>
     <lastmod>2024-12-02T20:43:40-03:00</lastmod>
   </url><url>
-    <loc>https://pablotabilo.github.io/journey-ds-algo/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

@@ -86,7 +86,7 @@ v_5(6!) &= \sum_{i=1}^{L = \lfloor \log_5(6) \rfloor = 1} \left\lfloor \frac{6}{
 $$
 
 ## Code
-The time complexity is $O(\log e)$, where $e$ is the exponent, and the space complexity is $O(1)$.
+The time complexity is $O(\log_p n)$, where $p$ is the prime, and the space complexity is $O(1)$.
 
 ```cpp
 #include <bits/stdc++.h>
