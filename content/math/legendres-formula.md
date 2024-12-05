@@ -15,7 +15,7 @@ The task is to calculate the number of trailing zeros in the factorial $n!$. For
 If we analyze the pattern, it looks like this:
 
 $$
-\begin{aligned}
+\begin{align*}
 1! &= 1 \\\\
 2! &= 2 \\\\
 3! &= 6 \\\\
@@ -32,7 +32,7 @@ $$
 14! &= 87178291200 \\\\
 15! &= 1307674368000 \\\\
 16! &= 20922789888000
-\end{aligned}
+\end{align*}
 $$
 
 Every multiple of 5 seems to add a trailing zero. But why does this happen?  

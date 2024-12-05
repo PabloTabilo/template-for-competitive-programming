@@ -259,7 +259,7 @@ In the CSES Problem Set, it is part of the introductory problems and serves as a
 <p>The task is to calculate the number of trailing zeros in the factorial $n!$. For example, $20! = 2432902008176640000$, which has 4 trailing zeros.</p>
 <p>If we analyze the pattern, it looks like this:</p>
 <p>$$
-\begin{aligned}
+\begin{align*}
 1! &amp;= 1 \\
 2! &amp;= 2 \\
 3! &amp;= 6 \\
@@ -276,7 +276,7 @@ In the CSES Problem Set, it is part of the introductory problems and serves as a
 14! &amp;= 87178291200 \\
 15! &amp;= 1307674368000 \\
 16! &amp;= 20922789888000
-\end{aligned}
+\end{align*}
 $$</p>
 <p>Every multiple of 5 seems to add a trailing zero. But why does this happen?<br>
 This is because to add a zero to any number, we need $5 \cdot 2 = 10$. Thus, every pair $(5, 2)$ contributes a trailing zero.</p>
