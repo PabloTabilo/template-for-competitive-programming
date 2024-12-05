@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Legendre&rsquo;s Formula
+  #
+
+Why do we need to understand this technique?
+In the CSES Problem Set, it is part of the introductory problems and serves as a foundational equation for building mathematical skills.
+
+  Problem Statement:
+  #
+
+The original problem can be found here: CSES Problem 1618.
+The task is to calculate the number of trailing zeros in the factorial $n!$. For example, $20! = 2432902008176640000$, which has 4 trailing zeros.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/math/legendres-formula/">
+  <meta property="og:site_name" content="A Journey Through DS and Algorithms">
+  <meta property="og:title" content="Legendre&#39;s Formula">
+  <meta property="og:description" content="Legendre’s Formula#Why do we need to understand this technique?
+In the CSES Problem Set, it is part of the introductory problems and serves as a foundational equation for building mathematical skills.
+Problem Statement:#The original problem can be found here: CSES Problem 1618.
+The task is to calculate the number of trailing zeros in the factorial $n!$. For example, $20! = 2432902008176640000$, which has 4 trailing zeros.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="math">
+<title>Legendre&#39;s Formula | A Journey Through DS and Algorithms</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/math/legendres-formula/">
+<link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.c5538a66f028483fd569ea65bc8a189fabb6e131e1bdb1c0969caa44a1a5b311.js" integrity="sha256-xVOKZvAoSD/VaeplvIoYn6u24THhvbHAlpyqRKGlsxE=" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false }
+      ]
+    });
+  });
+</script>
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>A Journey Through DS and Algorithms</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/math/" class="">Math Problems</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/math/modular-exponentiation/" class="">Modular Exponentiation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/math/fermats-little-theorem/" class="">Fermat&#39;s little Theorem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/math/legendres-formula/" class="active">Legendre&#39;s Formula</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/data-structures/" class="">Data Structures Problems</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/data-structures/graphs/" class="">Graphs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/data-structures/segment-tree/" class="">Segment Tree</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Legendre&#39;s Formula</h3>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="legendres-formula">
+  Legendre&rsquo;s Formula
+  <a class="anchor" href="#legendres-formula">#</a>
+</h1>
+<p>Why do we need to understand this technique?<br>
+In the CSES Problem Set, it is part of the introductory problems and serves as a foundational equation for building mathematical skills.</p>
+<h2 id="problem-statement">
+  Problem Statement:
+  <a class="anchor" href="#problem-statement">#</a>
+</h2>
+<p>The original problem can be found here: <a href="https://cses.fi/problemset/task/1618/">CSES Problem 1618</a>.</p>
+<p>The task is to calculate the number of trailing zeros in the factorial $n!$. For example, $20! = 2432902008176640000$, which has 4 trailing zeros.</p>
+<p>If we analyze the pattern, it looks like this:</p>
+<p>$$
+\begin{aligned}
+1! &amp;= 1 \\
+2! &amp;= 2 \\
+3! &amp;= 6 \\
+4! &amp;= 24 \\
+5! &amp;= 120 \\
+6! &amp;= 720 \\
+7! &amp;= 5040 \\
+8! &amp;= 40320 \\
+9! &amp;= 362880 \\
+10! &amp;= 3628800 \\
+11! &amp;= 39916800 \\
+12! &amp;= 479001600 \\
+13! &amp;= 6227020800 \\
+14! &amp;= 87178291200 \\
+15! &amp;= 1307674368000 \\
+16! &amp;= 20922789888000
+\end{aligned}
+$$</p>
+<p>Every multiple of 5 seems to add a trailing zero. But why does this happen?<br>
+This is because to add a zero to any number, we need $5 \cdot 2 = 10$. Thus, every pair $(5, 2)$ contributes a trailing zero.</p>
+<p>For instance:<br>
+$$6! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 = 2^4 \cdot 3^2 \cdot 5.$$</p>
+<p>Finally, to find the number of trailing zeros, we calculate:
+$$\text{min}(x, y)$$
+where:
+$$
+\begin{array}{l}
+\bullet \ x \text{ is the number of times (or the exponent) the prime } 2 \text{ is multiplied (e.g., for } 6, , x = 4). \\
+\bullet \ y \text{ is the number of times (or the exponent) the prime } 5 \text{ is multiplied (e.g., for } 6, , y = 1). \\
+\end{array}
+$$</p>
+<p>Thus, for $6$, $\text{min}(x=4, y=1) = 1$, which is the trailing zero for this case.</p>
+<p>Here is where <strong>Legendre&rsquo;s Formula</strong> comes in, as it provides an expression for the exponent of the largest power of a prime $p$ that divides the factorial $n!$:</p>
+<p>$$
+v_p(n!) = \sum_{i=1}^\infty \left\lfloor \frac{n}{p^i} \right\rfloor
+$$</p>
+<p>Where:</p>
+<ul>
+<li>$n$ is the factorial.</li>
+<li>$p$ is the prime.</li>
+<li>$\lfloor x \rfloor$ is the floor function.</li>
+</ul>
+<p>We can simplify the formula since if $p^i &gt; n$, then $\left\lfloor \frac{n}{p^i} \right\rfloor = 0$.<br>
+Thus:
+$$
+v_p(n!) = \sum_{i=1}^L \left\lfloor \frac{n}{p^i} \right\rfloor
+$$</p>
+<p>And:
+$$
+L = \lfloor \log_p(n) \rfloor
+$$</p>
+<p>If we revisit $6!$, where $6! = 2^4 \cdot 3^2 \cdot 5$, we can calculate:</p>
+<p>$$
+\begin{align*}
+v_2(6!) &amp;= \sum_{i=1}^{L = \lfloor \log_2(6) \rfloor = 2} \left\lfloor \frac{6}{2^i} \right\rfloor = \left\lfloor \frac{6}{2} \right\rfloor + \left\lfloor \frac{6}{4} \right\rfloor = 3 + 1 = 4, \\
+v_3(6!) &amp;= \sum_{i=1}^{L = \lfloor \log_3(6) \rfloor = 1} \left\lfloor \frac{6}{3^i} \right\rfloor = \left\lfloor \frac{6}{3} \right\rfloor = 2, \\
+v_5(6!) &amp;= \sum_{i=1}^{L = \lfloor \log_5(6) \rfloor = 1} \left\lfloor \frac{6}{5^i} \right\rfloor = 1.
+\end{align*}
+$$</p>
+<h2 id="code">
+  Code
+  <a class="anchor" href="#code">#</a>
+</h2>
+<p>The time complexity is $O(\log e)$, where $e$ is the exponent, and the space complexity is $O(1)$.</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#bc7a00">#include</span> <span style="color:#bc7a00">&lt;bits/stdc++.h&gt;</span><span style="color:#bc7a00">
+</span></span></span><span style="display:flex;"><span><span style="color:#bc7a00"></span><span style="color:#008000;font-weight:bold">using</span> <span style="color:#008000;font-weight:bold">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">using</span> ll <span style="color:#666">=</span> <span style="color:#b00040">long</span> <span style="color:#b00040">long</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b00040">int</span> <span style="color:#00f">main</span>(){
+</span></span><span style="display:flex;"><span>    ios<span style="color:#666">::</span>sync_with_stdio(<span style="color:#008000">false</span>); cin.tie(<span style="color:#666">0</span>); cout.tie(<span style="color:#666">0</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#b00040">int</span> n;
+</span></span><span style="display:flex;"><span>    cin <span style="color:#666">&gt;&gt;</span> n;
+</span></span><span style="display:flex;"><span>    <span style="color:#408080;font-style:italic">// Remember: for a &#34;0&#34; to exist, there must be a 10 or 2*5 primes
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// Legendre&#39;s formula
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    <span style="color:#b00040">int</span> cnt <span style="color:#666">=</span> <span style="color:#666">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">for</span>(<span style="color:#b00040">int</span> i <span style="color:#666">=</span> <span style="color:#666">5</span>; (n <span style="color:#666">/</span> i) <span style="color:#666">&gt;</span> <span style="color:#666">0</span>; i <span style="color:#666">*=</span> <span style="color:#666">5</span>){
+</span></span><span style="display:flex;"><span>        cnt <span style="color:#666">+=</span> (n <span style="color:#666">/</span> i);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    cout <span style="color:#666">&lt;&lt;</span> cnt <span style="color:#666">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">return</span> <span style="color:#666">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="references">
+  References
+  <a class="anchor" href="#references">#</a>
+</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Legendre%27s_formula">https://en.wikipedia.org/wiki/Legendre%27s_formula</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

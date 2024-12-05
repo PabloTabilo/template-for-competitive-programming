@@ -9,6 +9,7 @@ enableGitInfo = true
 themesDir = "themes"
 
 [params]
+  math = true
   BookTheme = 'light'
   bookToC = false                    # Enable Table of Contents
   bookCollapseSection = true        # Collapsible sections in the sidebar
@@ -21,6 +22,9 @@ themesDir = "themes"
   BookSection = '*'
 
 [markup]
+  [markup.goldmark]
+      [markup.goldmark.extensions]
+        linkify = true
   [markup.katex]
     enable = true                   # Enable LaTeX rendering
   [markup.highlight]

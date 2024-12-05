@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Structures Problems on A Journey Through DS and Algorithms</title>
-    <link>http://localhost:1313/data-structures/</link>
+    <link>https://pablotabilo.github.io/journey-ds-algo/data-structures/</link>
     <description>Recent content in Data Structures Problems on A Journey Through DS and Algorithms</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/data-structures/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pablotabilo.github.io/journey-ds-algo/data-structures/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Graphs</title>
-      <link>http://localhost:1313/data-structures/graphs/</link>
+      <link>https://pablotabilo.github.io/journey-ds-algo/data-structures/graphs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/data-structures/graphs/</guid>
+      <guid>https://pablotabilo.github.io/journey-ds-algo/data-structures/graphs/</guid>
       <description>&lt;h1 id=&#34;graph-problems&#34;&gt;&#xD;&#xA;  Graph Problems&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#graph-problems&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Content for Graph Problems goes here.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Segment Tree</title>
-      <link>http://localhost:1313/data-structures/segment-tree/</link>
+      <link>https://pablotabilo.github.io/journey-ds-algo/data-structures/segment-tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/data-structures/segment-tree/</guid>
+      <guid>https://pablotabilo.github.io/journey-ds-algo/data-structures/segment-tree/</guid>
       <description>&lt;h1 id=&#34;segment-tree&#34;&gt;&#xD;&#xA;  Segment Tree&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#segment-tree&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Content for Segment Tree problems goes here.&lt;/p&gt;</description>
     </item>
   </channel>

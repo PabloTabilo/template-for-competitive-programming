@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
@@ -21,7 +21,7 @@ $m$ is the modulus, typically chosen to constrain the result within manageable b
 For example, $2^{1000}$. Calculating this value directly would involve a massive number, making it computationally infeasible due to both time complexity and memory constraints. Modular exponentiation is a technique designed to handle this efficiently.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/math/modular-exponentiation/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://pablotabilo.github.io/journey-ds-algo/math/modular-exponentiation/">
   <meta property="og:site_name" content="A Journey Through DS and Algorithms">
   <meta property="og:title" content="Modular Exponentiation">
   <meta property="og:description" content="Modular Exponentiation#Imagine you need to compute a value $a^e$ where $a&gt;0$ and $e$ is a large positive integer. Calculating this directly can result in excessively large numbers, leading to overflow errors. To avoid this, we use modular arithmetic, where the result is calculated modulo a given number $m$. In mathematical terms, we aim to compute:
@@ -31,18 +31,18 @@ $a&gt;0$ and $e&gt;0$, both are integers. $m$ is the modulus, typically chosen t
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="math">
-    <meta property="article:modified_time" content="2024-12-02T20:43:40-03:00">
+    <meta property="article:modified_time" content="2024-12-03T22:19:24-03:00">
 <title>Modular Exponentiation | A Journey Through DS and Algorithms</title>
-<link rel="icon" href="/favicon.png" >
-<link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:1313/math/modular-exponentiation/">
-<link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
-  <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.838ca63b98c99c2d842ddb1d8d99afbc0903f62461ec92a102482536b9a77111.js" integrity="sha256-g4ymO5jJnC2ELdsdjZmvvAkD9iRh7JKhAkglNrmncRE=" crossorigin="anonymous"></script>
+<link rel="icon" href="/journey-ds-algo/favicon.png" >
+<link rel="manifest" href="/journey-ds-algo/manifest.json">
+<link rel="canonical" href="https://pablotabilo.github.io/journey-ds-algo/math/modular-exponentiation/">
+<link rel="stylesheet" href="/journey-ds-algo/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/journey-ds-algo/fuse.min.js"></script>
+  <script defer src="/journey-ds-algo/en.search.min.5057dcad851b2fb8feed53ff14c779d146283966de7441c502ddd0c0511b3639.js" integrity="sha256-UFfcrYUbL7j&#43;7VP/FMd50UYoOWbedEHFAt3QwFEbNjk=" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="/katex/katex.min.css">
-<script defer src="/katex/katex.min.js"></script>
-<script defer src="/katex/auto-render.min.js"></script>
+<link rel="stylesheet" href="/journey-ds-algo/katex/katex.min.css">
+<script defer src="/journey-ds-algo/katex/katex.min.js"></script>
+<script defer src="/journey-ds-algo/katex/auto-render.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     renderMathInElement(document.body, {
@@ -69,7 +69,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/"><span>A Journey Through DS and Algorithms</span>
+  <a class="flex align-center" href="/journey-ds-algo/"><span>A Journey Through DS and Algorithms</span>
   </a>
 </h2>
 
@@ -107,7 +107,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/math/" class="">Math Problems</a>
+    <a href="/journey-ds-algo/math/" class="">Math Problems</a>
   
 
           
@@ -120,7 +120,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/math/modular-exponentiation/" class="active">Modular Exponentiation</a>
+    <a href="/journey-ds-algo/math/modular-exponentiation/" class="active">Modular Exponentiation</a>
   
 
         </li>
@@ -133,7 +133,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/math/fermats-little-theorem/" class="">Fermat&#39;s little Theorem</a>
+    <a href="/journey-ds-algo/math/fermats-little-theorem/" class="">Fermat&#39;s little Theorem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/journey-ds-algo/math/legendres-formula/" class="">Legendre&#39;s Formula</a>
   
 
         </li>
@@ -151,7 +164,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/data-structures/" class="">Data Structures Problems</a>
+    <a href="/journey-ds-algo/data-structures/" class="">Data Structures Problems</a>
   
 
           
@@ -164,7 +177,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/data-structures/graphs/" class="">Graphs</a>
+    <a href="/journey-ds-algo/data-structures/graphs/" class="">Graphs</a>
   
 
         </li>
@@ -177,7 +190,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/data-structures/segment-tree/" class="">Segment Tree</a>
+    <a href="/journey-ds-algo/data-structures/segment-tree/" class="">Segment Tree</a>
   
 
         </li>
@@ -220,7 +233,7 @@ https://github.com/alex-shpak/hugo-book
         
   <div class="flex align-center justify-between">
   <label for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+    <img src="/journey-ds-algo/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
   <h3>Modular Exponentiation</h3>
