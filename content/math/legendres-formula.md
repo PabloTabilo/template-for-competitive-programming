@@ -44,12 +44,8 @@ $$6! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 = 2^4 \cdot 3^2 \cdot 5.$$
 Finally, to find the number of trailing zeros, we calculate: 
 $$\text{min}(x, y)$$
 where:
-$$
-\begin{array}{l}
-\bullet \ x \text{ is the number of times (or the exponent) the prime } 2 \text{ is multiplied (e.g., for } 6, \, x = 4). \\\\
-\bullet \ y \text{ is the number of times (or the exponent) the prime } 5 \text{ is multiplied (e.g., for } 6, \, y = 1). \\\\
-\end{array}
-$$
+* $x$ is the number of times (or the exponent) of the prime 2 is multiplied. (e.g., for 6, $x = 4$).
+* $y$ is the number of times (or the exponent) of the prime 5 is multiplied. (e.g., for 6, $y = 1$).
 
 Thus, for $6$, $\text{min}(x=4, y=1) = 1$, which is the trailing zero for this case.
 
@@ -81,7 +77,7 @@ $$
 \begin{align*}
 v_2(6!) &= \sum_{i=1}^{L = \lfloor \log_2(6) \rfloor = 2} \left\lfloor \frac{6}{2^i} \right\rfloor = \left\lfloor \frac{6}{2} \right\rfloor + \left\lfloor \frac{6}{4} \right\rfloor = 3 + 1 = 4, \\\\
 v_3(6!) &= \sum_{i=1}^{L = \lfloor \log_3(6) \rfloor = 1} \left\lfloor \frac{6}{3^i} \right\rfloor = \left\lfloor \frac{6}{3} \right\rfloor = 2, \\\\
-v_5(6!) &= \sum_{i=1}^{L = \lfloor \log_5(6) \rfloor = 1} \left\lfloor \frac{6}{5^i} \right\rfloor = 1.
+v_5(6!) &= \sum_{i=1}^{L = \lfloor \log_5(6) \rfloor = 1} \left\lfloor \frac{6}{5^i} \right\rfloor = \left\lfloor \frac{6}{5} \right\rfloor = 1.
 \end{align*}
 $$
 
