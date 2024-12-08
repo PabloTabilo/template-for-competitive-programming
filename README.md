@@ -37,4 +37,6 @@ Here is the link to the online book: [journey-ds-algo](https://pablotabilo.githu
     - https://leetcode.com/problems/maximum-prime-difference/description/
 * implementation of mask or binary mask, utils for start with bitwise operations
     - https://cses.fi/problemset/task/1623
+* implementation of modular arithmetic and properties
+    - https://leetcode.com/problems/transformed-array/description/
 
