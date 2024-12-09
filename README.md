@@ -24,6 +24,8 @@ Here is the link to the online book: [journey-ds-algo](https://pablotabilo.githu
             * https://judge.yosupo.jp/problem/zalgorithm
 * Implement update for segment Tree
 * query from leaf nodes
+* Implementation of a good example for segment tree
+    - https://leetcode.com/problems/special-array-ii/description/
 * Implement some of combinatorics
     - https://cses.fi/problemset/task/1072
 * Good problem for euclidean circuit
