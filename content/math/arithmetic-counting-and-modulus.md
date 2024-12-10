@@ -46,7 +46,7 @@ For example:
 * If $d = 2$, then $block_2 = 9 \cdot 10^1 \cdot 2 = 180$ digits.
 * If $d = 3$, then $block_3 = 9 \cdot 10^2 \cdot 3 = 2700$ digits.
 
-Did you see the pattern?, its like i can build some solution that can run on $O(\log_{10}(k))$.
+Did you see the pattern?, its like we can build some solution that runs on $O(\log_{10}(k))$.
 
 We also know the starting point (the first number) for each block:
 * If $d = 1$, then $start = 1$
