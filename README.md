@@ -34,6 +34,7 @@ Here is the link to the online book: [journey-ds-algo](https://pablotabilo.githu
 * implementation of dequeue:
     - https://cses.fi/problemset/task/1755
     - this is using recursion: https://cses.fi/problemset/result/11327869/
+    - using deque on lc: https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/description/
 * implementation of sieve:
     - https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
     - https://leetcode.com/problems/maximum-prime-difference/description/
