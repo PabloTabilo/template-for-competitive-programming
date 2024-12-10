@@ -1,6 +1,6 @@
 ---
 title: "Modular Exponentiation"
-weight: 1
+weight: 3
 ---
 
 # Modular Exponentiation

@@ -11,7 +11,7 @@ themesDir = "themes"
 
 [params]
   BookTheme = 'light'
-  bookToC = false                    # Enable Table of Contents
+  bookToC = true                    # Enable Table of Contents
   bookCollapseSection = true        # Collapsible sections in the sidebar
   bookCollapseDepth = 0            # Collapse depth for subsections
   bookSidebar = true                # Enable sidebar navigation

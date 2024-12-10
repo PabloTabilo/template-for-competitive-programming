@@ -43,4 +43,6 @@ Here is the link to the online book: [journey-ds-algo](https://pablotabilo.githu
     - This is the brute force approach: https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/description/
 * implementation of modular arithmetic and properties
     - https://leetcode.com/problems/transformed-array/description/
+* implement arithmetic, count and modular problems:
+    - https://cses.fi/problemset/task/2431/
 

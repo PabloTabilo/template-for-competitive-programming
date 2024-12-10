@@ -8,6 +8,20 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Arithmetic, counting and modulus operations</title>
+      <link>http://localhost:1313/math/arithmetic-counting-and-modulus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/math/arithmetic-counting-and-modulus/</guid>
+      <description>&lt;h1 id=&#34;arithmetic-counting-and-modulus-operations&#34;&gt;&#xD;&#xA;  Arithmetic, counting and modulus operations&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#arithmetic-counting-and-modulus-operations&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;In this article, we aim to enhance our pattern recognition abilities by leveraging fundamental mathematical skills such as arithmetic, counting, and modulus operations.&lt;/p&gt;&#xA;&lt;p&gt;To begin, we will explore a problem that encourages a deeper understanding of these techniques. This problem, known as &lt;code&gt;Digit Queries&lt;/code&gt;, is part of the CSES problem set.&lt;/p&gt;&#xA;&lt;h2 id=&#34;digit-queries---problem-statement&#34;&gt;&#xD;&#xA;  Digit Queries - Problem statement&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#digit-queries---problem-statement&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Consider an infinite string that consist of all positive integer in increasing order:&#xA;&lt;code&gt;12345678910111213141516171819202122232425...&lt;/code&gt;&#xA;Your task is to process $q$ queries of the form: what&amp;rsquo;s the digit at position $k$ in the string?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Legendre&#39;s Formula</title>
+      <link>http://localhost:1313/math/legendres-formula/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/math/legendres-formula/</guid>
+      <description>&lt;h1 id=&#34;legendres-formula&#34;&gt;&#xD;&#xA;  Legendre&amp;rsquo;s Formula&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#legendres-formula&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Why do we need to understand this technique?&lt;br&gt;&#xA;In the CSES Problem Set, it is part of the introductory problems and serves as a foundational equation for building mathematical skills.&lt;/p&gt;&#xA;&lt;h2 id=&#34;problem-statement&#34;&gt;&#xD;&#xA;  Problem Statement:&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#problem-statement&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;The original problem can be found here: &lt;a href=&#34;https://cses.fi/problemset/task/1618/&#34;&gt;CSES Problem 1618&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The task is to calculate the number of trailing zeros in the factorial $n!$. For example, $20! = 2432902008176640000$, which has 4 trailing zeros.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Modular Exponentiation</title>
       <link>http://localhost:1313/math/modular-exponentiation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -20,13 +34,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/math/fermats-little-theorem/</guid>
       <description>&lt;h1 id=&#34;fermats-little-theorem&#34;&gt;&#xD;&#xA;  Fermat&amp;rsquo;s Little Theorem&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#fermats-little-theorem&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;If $p$ is a prime number and $a$ is an integer such that $a$ is not divisible by $p$, then:&lt;/p&gt;&#xA;&lt;p&gt;$$a^{p-1} \equiv 1 \pmod{p}$$&lt;/p&gt;&#xA;&lt;h2 id=&#34;modular-inverse-using-fermats-little-theorem&#34;&gt;&#xD;&#xA;  Modular Inverse using Fermat&amp;rsquo;s Little Theorem&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#modular-inverse-using-fermats-little-theorem&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;The above theorem can be rearranged to give the modular inverse of $a$:&lt;/p&gt;&#xA;&lt;p&gt;$$a^{-1} \equiv a^{p-2} \pmod{p}$$&lt;/p&gt;&#xA;&lt;p&gt;This allows us to calculate the inverse of $a$ under modulo $p$, which is useful for division in modular arithmetic.&#xA;Example problem for use this technique: &lt;a href=&#34;https://codeforces.com/contest/2008/problem/F&#34;&gt;https://codeforces.com/contest/2008/problem/F&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Legendre&#39;s Formula</title>
-      <link>http://localhost:1313/math/legendres-formula/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/math/legendres-formula/</guid>
-      <description>&lt;h1 id=&#34;legendres-formula&#34;&gt;&#xD;&#xA;  Legendre&amp;rsquo;s Formula&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#legendres-formula&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Why do we need to understand this technique?&lt;br&gt;&#xA;In the CSES Problem Set, it is part of the introductory problems and serves as a foundational equation for building mathematical skills.&lt;/p&gt;&#xA;&lt;h2 id=&#34;problem-statement&#34;&gt;&#xD;&#xA;  Problem Statement:&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#problem-statement&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;The original problem can be found here: &lt;a href=&#34;https://cses.fi/problemset/task/1618/&#34;&gt;CSES Problem 1618&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The task is to calculate the number of trailing zeros in the factorial $n!$. For example, $20! = 2432902008176640000$, which has 4 trailing zeros.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Arithmetic, counting and modulus operations
+  #
+
+In this article, we aim to enhance our pattern recognition abilities by leveraging fundamental mathematical skills such as arithmetic, counting, and modulus operations.
+To begin, we will explore a problem that encourages a deeper understanding of these techniques. This problem, known as Digit Queries, is part of the CSES problem set.
+
+  Digit Queries - Problem statement
+  #
+
+Consider an infinite string that consist of all positive integer in increasing order:
+12345678910111213141516171819202122232425...
+Your task is to process $q$ queries of the form: what&rsquo;s the digit at position $k$ in the string?">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/math/arithmetic-counting-and-modulus/">
+  <meta property="og:site_name" content="A Journey Through DS and Algorithms">
+  <meta property="og:title" content="Arithmetic, counting and modulus operations">
+  <meta property="og:description" content="Arithmetic, counting and modulus operations#In this article, we aim to enhance our pattern recognition abilities by leveraging fundamental mathematical skills such as arithmetic, counting, and modulus operations.
+To begin, we will explore a problem that encourages a deeper understanding of these techniques. This problem, known as Digit Queries, is part of the CSES problem set.
+Digit Queries - Problem statement#Consider an infinite string that consist of all positive integer in increasing order: 12345678910111213141516171819202122232425... Your task is to process $q$ queries of the form: what’s the digit at position $k$ in the string?">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="math">
+<title>Arithmetic, counting and modulus operations | A Journey Through DS and Algorithms</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/math/arithmetic-counting-and-modulus/">
+<link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.f7b9b1c9a4f55d25e7fd19187976db3047a7d0fd661b56aa97710bfd12c17865.js" integrity="sha256-97mxyaT1XSXn/RkYeXbbMEen0P1mG1aql3EL/RLBeGU=" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false }
+      ]
+    });
+  });
+</script>
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>A Journey Through DS and Algorithms</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/math/" class="">Math Problems</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/math/arithmetic-counting-and-modulus/" class="active">Arithmetic, counting and modulus operations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/math/legendres-formula/" class="">Legendre&#39;s Formula</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/math/modular-exponentiation/" class="">Modular Exponentiation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/math/fermats-little-theorem/" class="">Fermat&#39;s little Theorem</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/data-structures/" class="">Data Structures Problems</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/data-structures/graphs/" class="">Graphs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/data-structures/segment-tree/" class="">Segment Tree</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Arithmetic, counting and modulus operations</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#digit-queries---problem-statement">Digit Queries - Problem statement</a></li>
+    <li><a href="#thoughts">Thoughts</a></li>
+    <li><a href="#code">Code</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="arithmetic-counting-and-modulus-operations">
+  Arithmetic, counting and modulus operations
+  <a class="anchor" href="#arithmetic-counting-and-modulus-operations">#</a>
+</h1>
+<p>In this article, we aim to enhance our pattern recognition abilities by leveraging fundamental mathematical skills such as arithmetic, counting, and modulus operations.</p>
+<p>To begin, we will explore a problem that encourages a deeper understanding of these techniques. This problem, known as <code>Digit Queries</code>, is part of the CSES problem set.</p>
+<h2 id="digit-queries---problem-statement">
+  Digit Queries - Problem statement
+  <a class="anchor" href="#digit-queries---problem-statement">#</a>
+</h2>
+<p>Consider an infinite string that consist of all positive integer in increasing order:
+<code>12345678910111213141516171819202122232425...</code>
+Your task is to process $q$ queries of the form: what&rsquo;s the digit at position $k$ in the string?</p>
+<p><em>Constraints</em></p>
+<ul>
+<li>$1 \le q \le 1000$</li>
+<li>$1 \le k \le 10^{18}$</li>
+</ul>
+<p>For example, if a query asks for the digit at position $k = 7$, we need to return <code>7</code>. Why? Because the $7^{th}$ position in the infinite string <code>1234567...</code> is indeed <code>7</code>.</p>
+<p>Another example: if $k = 12$, we must return <code>1</code> since the $12^{th}$ digit of the string <code>123456789101...</code> is <code>1</code>.</p>
+<p>As a final example, consider $k = 19$. We need to return <code>4</code> because in the string <code>1234567891011121314...</code>, the $19^{th}$ digit is <code>4</code>.</p>
+<h2 id="thoughts">
+  Thoughts
+  <a class="anchor" href="#thoughts">#</a>
+</h2>
+<p>The string is infinite, so we cannot fully generate or store it. Instead, we need to identify patterns or make &ldquo;jumps&rdquo; through the sequence of digits.</p>
+<p>If we consider the numbers grouped by their digit lengths:</p>
+<ul>
+<li><code>123456789</code> (1-digit numbers)</li>
+<li><code>10111213141516171819202122...9899</code> (2-digit numbers)</li>
+<li><code>100101102103104...998999</code> (3-digit numbers)</li>
+<li><code>...</code> and so forth</li>
+</ul>
+<p>For each digit length $d$, the total number of digits in that block can be expressed as:</p>
+<p>$$
+block_d = 9 \cdot 10^{d-1} \cdot d
+$$</p>
+<p>For example:</p>
+<ul>
+<li>If $d = 1$, then $block_1 = 9 \cdot 10^0 \cdot 1 = 9$ digits.</li>
+<li>If $d = 2$, then $block_2 = 9 \cdot 10^1 \cdot 2 = 180$ digits.</li>
+<li>If $d = 3$, then $block_3 = 9 \cdot 10^2 \cdot 3 = 2700$ digits.</li>
+</ul>
+<p>Did you see the pattern?, its like i can build some solution that can run on $O(\log_{10}(k))$.</p>
+<p>We also know the starting point (the first number) for each block:</p>
+<ul>
+<li>If $d = 1$, then $start = 1$</li>
+<li>If $d = 2$, then $start = 10$</li>
+<li>If $d = 3$, then $start = 100$</li>
+</ul>
+<p>&hellip; and so on.</p>
+<p>With this information, we can find the specific number $num_k$ that contains the digit at position $k$:</p>
+<p>Here, $k_{block_d}$ is the position $k$ adjusted to the current digit block. We cannot use the raw $k^{th}$ position directly because we must first exclude all the digits from previous blocks.</p>
+<p>For example, if $k = 19$, the first 9 digits are from the 1-digit block, leaving $k_{block_2} = 19 - 9 = 10$. Since the 2-digit block starts right after those 9 digits, we move forward within this block. We use $k_{block_2} - 1 = 9$ to determine how far into the 2-digit sequence we go, and in this case, $num_k = 14$.</p>
+<p>After finding $num_k$, we identify the exact digit with a modulus operation:
+$$
+digitIndex = (k - 1) \mod d
+$$</p>
+<p>We then convert $num_k$ to a <code>string</code> and extract the character at <code>digitIndex</code>, <code>num_k[digitIndex]</code>.</p>
+<h2 id="code">
+  Code
+  <a class="anchor" href="#code">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#bc7a00">#include</span> <span style="color:#bc7a00">&lt;bits/stdc++.h&gt;</span><span style="color:#bc7a00">
+</span></span></span><span style="display:flex;"><span><span style="color:#bc7a00"></span><span style="color:#008000;font-weight:bold">using</span> <span style="color:#008000;font-weight:bold">namespace</span> std;
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">using</span> ll <span style="color:#666">=</span> <span style="color:#b00040">long</span> <span style="color:#b00040">long</span>;
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#b00040">int</span> <span style="color:#00f">main</span>(){
+</span></span><span style="display:flex;"><span>    ios<span style="color:#666">::</span>sync_with_stdio(<span style="color:#008000">false</span>); cin.tie(<span style="color:#666">0</span>); cout.tie(<span style="color:#666">0</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#b00040">int</span> q;
+</span></span><span style="display:flex;"><span>    cin <span style="color:#666">&gt;&gt;</span> q;
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">while</span>(q<span style="color:#666">--</span>){
+</span></span><span style="display:flex;"><span>	ll k;
+</span></span><span style="display:flex;"><span>	cin <span style="color:#666">&gt;&gt;</span> k;
+</span></span><span style="display:flex;"><span>	ll d <span style="color:#666">=</span> <span style="color:#666">1</span>;
+</span></span><span style="display:flex;"><span>	ll tot <span style="color:#666">=</span> <span style="color:#666">9</span> <span style="color:#666">*</span> d;
+</span></span><span style="display:flex;"><span>	ll ten <span style="color:#666">=</span> <span style="color:#666">1</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#008000;font-weight:bold">while</span>(tot <span style="color:#666">&lt;</span> k){
+</span></span><span style="display:flex;"><span>	    k <span style="color:#666">-=</span> tot;
+</span></span><span style="display:flex;"><span>	    d<span style="color:#666">++</span>;
+</span></span><span style="display:flex;"><span>	    ten <span style="color:#666">*=</span> <span style="color:#666">10</span>;
+</span></span><span style="display:flex;"><span>	    tot <span style="color:#666">=</span> <span style="color:#666">9</span> <span style="color:#666">*</span> d <span style="color:#666">*</span> ten;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#408080;font-style:italic">// numk = 99 -&gt; d = 2
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>	<span style="color:#408080;font-style:italic">// nunk = 100 -&gt; d = 3
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>	<span style="color:#408080;font-style:italic">// k &gt;&gt; iam here -&gt; d
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>	<span style="color:#408080;font-style:italic">// floor(k-1/d)
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>	ll numk <span style="color:#666">=</span> ten <span style="color:#666">+</span> (k<span style="color:#666">-</span><span style="color:#666">1</span>)<span style="color:#666">/</span>d;
+</span></span><span style="display:flex;"><span>	ll i <span style="color:#666">=</span> (k<span style="color:#666">-</span><span style="color:#666">1</span>)<span style="color:#666">%</span>d;
+</span></span><span style="display:flex;"><span>	string s <span style="color:#666">=</span> to_string(numk);
+</span></span><span style="display:flex;"><span>	<span style="color:#408080;font-style:italic">//cout &lt;&lt; &#34;k = &#34; &lt;&lt; k &lt;&lt; &#34;, ten = &#34; &lt;&lt; ten &lt;&lt; endl;
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>	<span style="color:#408080;font-style:italic">//cout &lt;&lt; &#34;numk = &#34; &lt;&lt; numk &lt;&lt; endl;
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>	<span style="color:#408080;font-style:italic">//cout &lt;&lt; &#34;i = &#34; &lt;&lt; i &lt;&lt; endl;
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>	cout <span style="color:#666">&lt;&lt;</span> s[i] <span style="color:#666">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">return</span> <span style="color:#666">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="references">
+  References
+  <a class="anchor" href="#references">#</a>
+</h2>
+<ul>
+<li>Digit Queries problem: <a href="https://cses.fi/problemset/task/2431/">https://cses.fi/problemset/task/2431/</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#digit-queries---problem-statement">Digit Queries - Problem statement</a></li>
+    <li><a href="#thoughts">Thoughts</a></li>
+    <li><a href="#code">Code</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

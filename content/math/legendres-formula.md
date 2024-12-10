@@ -1,5 +1,6 @@
 ---
 title: "Legendre's Formula"
+weight: 2
 ---
 
 # Legendre's Formula
@@ -106,7 +107,7 @@ int main(){
 ```
 
 
-### References
+## References
 * https://en.wikipedia.org/wiki/Legendre%27s_formula
 
 
