@@ -57,6 +57,10 @@ We also know the starting point (the first number) for each block:
 
 With this information, we can find the specific number $num_k$ that contains the digit at position $k$:
 
+$$
+num_k = start + \frac{(k_{block_d} - 1)}{d}
+$$
+
 Here, $k_{block_d}$ is the position $k$ adjusted to the current digit block. We cannot use the raw $k^{th}$ position directly because we must first exclude all the digits from previous blocks.
 
 For example, if $k = 19$, the first 9 digits are from the 1-digit block, leaving $k_{block_2} = 19 - 9 = 10$. Since the 2-digit block starts right after those 9 digits, we move forward within this block. We use $k_{block_2} - 1 = 9$ to determine how far into the 2-digit sequence we go, and in this case, $num_k = 14$.
