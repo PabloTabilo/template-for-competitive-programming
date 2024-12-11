@@ -4,24 +4,35 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
-  Segment Tree
+  Dequeue
   #
 
-Content for Segment Tree problems goes here.">
+
+  What&rsquo;s a dequeue?
+  #
+
+Is a generalize version of a queue with double Ended, where we can insert and delete elements at boths sides.
+So, in any problem when we need to pop or push elements fast on $O(1)$ this data structure is very util.
+
+  Problem - find longest special substring that occurs thrice I
+  #
+
+You are given a string s that consists of lowercase English letters.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/data-structures/segment-tree/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/data-structures/dequeue/">
   <meta property="og:site_name" content="A Journey Through DS and Algorithms">
-  <meta property="og:title" content="Segment Tree">
-  <meta property="og:description" content="Segment Tree#Content for Segment Tree problems goes here.">
+  <meta property="og:title" content="Dequeue">
+  <meta property="og:description" content="Dequeue#What’s a dequeue?#Is a generalize version of a queue with double Ended, where we can insert and delete elements at boths sides.
+So, in any problem when we need to pop or push elements fast on $O(1)$ this data structure is very util.
+Problem - find longest special substring that occurs thrice I#You are given a string s that consists of lowercase English letters.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="data-structures">
-    <meta property="article:modified_time" content="2024-12-02T20:43:40-03:00">
-<title>Segment Tree | A Journey Through DS and Algorithms</title>
+<title>Dequeue | A Journey Through DS and Algorithms</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:1313/data-structures/segment-tree/">
+<link rel="canonical" href="http://localhost:1313/data-structures/dequeue/">
 <link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.fc40b51caca66ddd95f1d77502488c5762162b94111309a54911b655ac0ed768.js" integrity="sha256-/EC1HKymbd2V8dd1AkiMV2IWK5QREwmlSRG2VawO12g=" crossorigin="anonymous"></script>
@@ -176,7 +187,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/data-structures/dequeue/" class="">Dequeue</a>
+    <a href="/data-structures/dequeue/" class="active">Dequeue</a>
   
 
         </li>
@@ -202,7 +213,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/data-structures/segment-tree/" class="active">Segment Tree</a>
+    <a href="/data-structures/segment-tree/" class="">Segment Tree</a>
   
 
         </li>
@@ -248,7 +259,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <h3>Segment Tree</h3>
+  <h3>Dequeue</h3>
 
   <label for="toc-control">
     
@@ -262,7 +273,18 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#whats-a-dequeue">What&rsquo;s a dequeue?</a></li>
+    <li><a href="#problem---find-longest-special-substring-that-occurs-thrice-i">Problem - find longest special substring that occurs thrice I</a>
+      <ul>
+        <li><a href="#example-test-case-1">Example test case 1:</a></li>
+        <li><a href="#thoughts">Thoughts</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References:</a></li>
+  </ul>
+</nav>
 
 
 
@@ -273,11 +295,54 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h1 id="segment-tree">
-  Segment Tree
-  <a class="anchor" href="#segment-tree">#</a>
+  <article class="markdown book-article"><h1 id="dequeue">
+  Dequeue
+  <a class="anchor" href="#dequeue">#</a>
 </h1>
-<p>Content for Segment Tree problems goes here.</p>
+<h2 id="whats-a-dequeue">
+  What&rsquo;s a dequeue?
+  <a class="anchor" href="#whats-a-dequeue">#</a>
+</h2>
+<p>Is a generalize version of a queue with double Ended, where we can insert and delete elements at boths sides.</p>
+<p>So, in any problem when we need to pop or push elements fast on $O(1)$ this data structure is very util.</p>
+<h2 id="problem---find-longest-special-substring-that-occurs-thrice-i">
+  Problem - find longest special substring that occurs thrice I
+  <a class="anchor" href="#problem---find-longest-special-substring-that-occurs-thrice-i">#</a>
+</h2>
+<p>You are given a string <code>s</code> that consists of lowercase English letters.</p>
+<p>A string is called <em>special</em> if its made up of only a single character. For example, the string <code>abc</code> is not special, whereas the string <code>ddd</code>, <code>zz</code> and <code>f</code> are special.</p>
+<p>Return the length of the longest special substrings of <code>s</code> which occurs at least thrice, or <code>-1</code> if no special substring occurs at least thrice.</p>
+<p>A substrings is a contiguous non-empty sequence of characters within a string.</p>
+<h3 id="example-test-case-1">
+  Example test case 1:
+  <a class="anchor" href="#example-test-case-1">#</a>
+</h3>
+<p>Input: <code>s = &quot;aaaa&quot;</code>
+Output: <code>2</code></p>
+<p>Explanation:</p>
+<ul>
+<li>If $k = 1$, so i have <code>{{a}, {a}, {a}, {a}}</code>, and repeat more than 3 times. Its a factible answer.</li>
+<li>If $k = 2$, so i have <code>{{aa}, {aa}, {aa}}</code>, and repeat more than 3 times. Its a factible answer and the best at moment.</li>
+<li>If $k = 3$, so i have <code>{{aaa}, {aaa}}</code>, and repeat more than 3 times. Its not a factible answer.</li>
+</ul>
+<h3 id="thoughts">
+  Thoughts
+  <a class="anchor" href="#thoughts">#</a>
+</h3>
+<ul>
+<li>Ok, the substring must be contiguous and not empty, so the combinations must be adjacents chars.</li>
+<li>If i need calculate combinations that are adjacent on a string may be i can use sliding windows</li>
+<li>Ok, but for sliding window if i wanna pop and push chars from front or end to my temporal contiguos substrings of size <code>k</code>, the time complexity gonna up if i try to insert elements or chars on front.</li>
+<li>Remember that the operation <code>+=</code> do it on a string, create a copy of the object. That&rsquo;s occupied time and memory.</li>
+<li>So if i only want get a track of the chars that are on my window, i can use a <code>deque&lt;char&gt;</code> and pop or push fast.</li>
+</ul>
+<h2 id="references">
+  References:
+  <a class="anchor" href="#references">#</a>
+</h2>
+<ul>
+<li>link to the original problem: <a href="https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/description/">https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/description/</a></li>
+</ul>
 </article>
  
       
@@ -317,7 +382,18 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#whats-a-dequeue">What&rsquo;s a dequeue?</a></li>
+    <li><a href="#problem---find-longest-special-substring-that-occurs-thrice-i">Problem - find longest special substring that occurs thrice I</a>
+      <ul>
+        <li><a href="#example-test-case-1">Example test case 1:</a></li>
+        <li><a href="#thoughts">Thoughts</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References:</a></li>
+  </ul>
+</nav>
 
 
  

@@ -36,6 +36,13 @@
       <description>&lt;h1 id=&#34;fermats-little-theorem&#34;&gt;&#xD;&#xA;  Fermat&amp;rsquo;s Little Theorem&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#fermats-little-theorem&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;If $p$ is a prime number and $a$ is an integer such that $a$ is not divisible by $p$, then:&lt;/p&gt;&#xA;&lt;p&gt;$$a^{p-1} \equiv 1 \pmod{p}$$&lt;/p&gt;&#xA;&lt;h2 id=&#34;modular-inverse-using-fermats-little-theorem&#34;&gt;&#xD;&#xA;  Modular Inverse using Fermat&amp;rsquo;s Little Theorem&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#modular-inverse-using-fermats-little-theorem&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;The above theorem can be rearranged to give the modular inverse of $a$:&lt;/p&gt;&#xA;&lt;p&gt;$$a^{-1} \equiv a^{p-2} \pmod{p}$$&lt;/p&gt;&#xA;&lt;p&gt;This allows us to calculate the inverse of $a$ under modulo $p$, which is useful for division in modular arithmetic.&#xA;Example problem for use this technique: &lt;a href=&#34;https://codeforces.com/contest/2008/problem/F&#34;&gt;https://codeforces.com/contest/2008/problem/F&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Dequeue</title>
+      <link>http://localhost:1313/data-structures/dequeue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/data-structures/dequeue/</guid>
+      <description>&lt;h1 id=&#34;dequeue&#34;&gt;&#xD;&#xA;  Dequeue&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#dequeue&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;h2 id=&#34;whats-a-dequeue&#34;&gt;&#xD;&#xA;  What&amp;rsquo;s a dequeue?&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#whats-a-dequeue&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Is a generalize version of a queue with double Ended, where we can insert and delete elements at boths sides.&lt;/p&gt;&#xA;&lt;p&gt;So, in any problem when we need to pop or push elements fast on $O(1)$ this data structure is very util.&lt;/p&gt;&#xA;&lt;h2 id=&#34;problem---find-longest-special-substring-that-occurs-thrice-i&#34;&gt;&#xD;&#xA;  Problem - find longest special substring that occurs thrice I&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#problem---find-longest-special-substring-that-occurs-thrice-i&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;You are given a string &lt;code&gt;s&lt;/code&gt; that consists of lowercase English letters.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Graphs</title>
       <link>http://localhost:1313/data-structures/graphs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
