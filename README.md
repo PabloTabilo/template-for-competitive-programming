@@ -45,4 +45,5 @@ Here is the link to the online book: [journey-ds-algo](https://pablotabilo.githu
     - https://leetcode.com/problems/transformed-array/description/
 * simple problem and good for practice java data structures and algorithms, in this case a fast manner to calculate the square root of a number, and the use of PQ on java:
     - https://leetcode.com/problems/take-gifts-from-the-richest-pile/description/
+        - Add some references: https://www.geeksforgeeks.org/square-root-of-an-integer/
 
