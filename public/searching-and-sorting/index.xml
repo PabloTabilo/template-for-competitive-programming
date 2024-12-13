@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Searching And Sorting Problems on A Journey Through DS and Algorithms</title>
+    <link>http://localhost:1313/searching-and-sorting/</link>
+    <description>Recent content in Searching And Sorting Problems on A Journey Through DS and Algorithms</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/searching-and-sorting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Easy Sort Problem</title>
+      <link>http://localhost:1313/searching-and-sorting/easy-sort-problem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/searching-and-sorting/easy-sort-problem/</guid>
+      <description>&lt;h1 id=&#34;starting-with-sorting-problems&#34;&gt;&#xD;&#xA;  Starting with Sorting Problems&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#starting-with-sorting-problems&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Let&amp;rsquo;s start by looking at this LeetCode problem to help you understand the core concepts. Together we&amp;rsquo;ll explore the different techniques and data structures you can use to solve it effectively.&lt;/p&gt;&#xA;&lt;h2 id=&#34;2593---find-score-of-an-array-after-marking-all-elements&#34;&gt;&#xD;&#xA;  2593 - Find Score of An Array After Marking All Elements&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#2593---find-score-of-an-array-after-marking-all-elements&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Level &lt;code&gt;medium&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;problem-statement&#34;&gt;&#xD;&#xA;  Problem statement&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#problem-statement&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;You are given an array &lt;code&gt;nums&lt;/code&gt; consisting of positive integers.&lt;/p&gt;&#xA;&lt;p&gt;Starting with &lt;code&gt;score = 0&lt;/code&gt;, apply the following algorithm:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

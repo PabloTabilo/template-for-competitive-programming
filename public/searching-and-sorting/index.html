@@ -4,31 +4,24 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
-  Math Problems
+  Searching and Sorting
   #
 
-
-  Topics
-  #
-
-
-Arithmetic, counting and modulus operations
-Modular Exponentiation
-Fermat&rsquo;s Little Theorem
-legendre&rsquo;s Formula
-">
+To understand this type of problem, we need to consider cases where a specific permutation of the array or vector might be beneficial for us. If such a permutation has the characteristic that its elements are ordered monotonically, we can implement a sorting algorithm to achieve this order.
+When it comes to the searching phase, it&rsquo;s important to note that scanning an array of size n in the worst case takes $O(n)$ time. For large constraints, such as an array of size $10^9$, this becomes computationally infeasible, as scanning such an array empirically takes more than 1 second. Generally, if a solution takes too long to execute, it results in an error commonly known as TLE (Time Limit Exceeded).">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/math/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/searching-and-sorting/">
   <meta property="og:site_name" content="A Journey Through DS and Algorithms">
-  <meta property="og:title" content="Math Problems">
-  <meta property="og:description" content="Math Problems#Topics#Arithmetic, counting and modulus operations Modular Exponentiation Fermat’s Little Theorem legendre’s Formula">
+  <meta property="og:title" content="Searching And Sorting Problems">
+  <meta property="og:description" content="Searching and Sorting#To understand this type of problem, we need to consider cases where a specific permutation of the array or vector might be beneficial for us. If such a permutation has the characteristic that its elements are ordered monotonically, we can implement a sorting algorithm to achieve this order.
+When it comes to the searching phase, it’s important to note that scanning an array of size n in the worst case takes $O(n)$ time. For large constraints, such as an array of size $10^9$, this becomes computationally infeasible, as scanning such an array empirically takes more than 1 second. Generally, if a solution takes too long to execute, it results in an error commonly known as TLE (Time Limit Exceeded).">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
-<title>Math Problems | A Journey Through DS and Algorithms</title>
+<title>Searching And Sorting Problems | A Journey Through DS and Algorithms</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:1313/math/">
+<link rel="canonical" href="http://localhost:1313/searching-and-sorting/">
 <link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.da4e92447844b571d097666856c040063ecddc579b901dbd9c4fa283897104f3.js" integrity="sha256-2k6SRHhEtXHQl2ZoVsBABj7N3FebkB29nE&#43;ig4lxBPM=" crossorigin="anonymous"></script>
@@ -47,7 +40,7 @@ legendre&rsquo;s Formula
   });
 </script>
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/math/index.xml" title="A Journey Through DS and Algorithms" />
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/searching-and-sorting/index.xml" title="A Journey Through DS and Algorithms" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -101,7 +94,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/math/" class="active">Math Problems</a>
+    <a href="/math/" class="">Math Problems</a>
   
 
           
@@ -228,7 +221,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/searching-and-sorting/" class="">Searching And Sorting Problems</a>
+    <a href="/searching-and-sorting/" class="active">Searching And Sorting Problems</a>
   
 
           
@@ -287,7 +280,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <h3>Math Problems</h3>
+  <h3>Searching And Sorting Problems</h3>
 
   <label for="toc-control">
     
@@ -303,7 +296,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#topics">Topics</a></li>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
   </ul>
 </nav>
 
@@ -316,19 +309,18 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h1 id="math-problems">
-  Math Problems
-  <a class="anchor" href="#math-problems">#</a>
+  <article class="markdown book-article"><h1 id="searching-and-sorting">
+  Searching and Sorting
+  <a class="anchor" href="#searching-and-sorting">#</a>
 </h1>
-<h2 id="topics">
-  Topics
-  <a class="anchor" href="#topics">#</a>
+<p>To understand this type of problem, we need to consider cases where a specific permutation of the <code>array</code> or <code>vector</code> might be beneficial for us. If such a permutation has the characteristic that its elements are ordered monotonically, we can implement a sorting algorithm to achieve this order.</p>
+<p>When it comes to the searching phase, it&rsquo;s important to note that scanning an <code>array</code> of size <code>n</code> in the worst case takes $O(n)$ time. For large constraints, such as an <code>array</code> of size $10^9$, this becomes computationally infeasible, as scanning such an <code>array</code> empirically takes more than <code>1 second</code>. Generally, if a solution takes too long to execute, it results in an error commonly known as <code>TLE</code> (Time Limit Exceeded).</p>
+<h2 id="table-of-contents">
+  Table of Contents
+  <a class="anchor" href="#table-of-contents">#</a>
 </h2>
 <ul>
-<li><a href="arithmetic-counting-and-modulus/">Arithmetic, counting and modulus operations</a></li>
-<li><a href="modular-exponentiation/">Modular Exponentiation</a></li>
-<li><a href="fermats-little-theorem/">Fermat&rsquo;s Little Theorem</a></li>
-<li><a href="legendres-formula/">legendre&rsquo;s Formula</a></li>
+<li><a href="easy-sort-problem">easy sort problem</a></li>
 </ul>
 </article>
  
@@ -371,7 +363,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#topics">Topics</a></li>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
   </ul>
 </nav>
 
